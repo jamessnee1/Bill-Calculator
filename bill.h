@@ -3,7 +3,7 @@
 //  Bill Calculator
 //
 //  Created by James Snee on 1/09/2014.
-//
+//  Copyright (c) 2014 James Snee. All rights reserved.
 //
 
 

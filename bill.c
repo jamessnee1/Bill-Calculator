@@ -3,7 +3,7 @@
 //  Bill Calculator
 //
 //  Created by James Snee on 1/09/2014.
-//
+//  Copyright (c) 2014 James Snee. All rights reserved.
 //
 
 #include <stdio.h>
@@ -13,7 +13,8 @@
 
 
 
-int main(void){
+int main(void)
+{
     
     char *prompt1 = "Please enter a name for this bill: ";
     char *prompt2 = "Please enter total cost of bill (in $ and cents): $";
@@ -21,10 +22,7 @@ int main(void){
     char *prompt4 = "Please enter number of tenants this bill is for (up to 10): ";
     char *prompt5 = "Please enter tenant name: ";
     char *prompt6 = "Please enter number of days (during the bill) tenant has been here for (whole numbers only): ";
-    
-    
-    
-    
+
     /*temp variables*/
     int i;
     int j;
@@ -181,20 +179,6 @@ int main(void){
     
 
     return EXIT_SUCCESS;
-}
-
-/*Initialise tenant array*/
-void initTenant(Tenant * peoplearray){
-
-	int count;
-
-	for (count = 0; count < NUMBER_OF_TENANTS; count++){
-		strcpy(peoplearray[count].tenant_name, "NULL");
-		peoplearray[count].num_of_days = 0;
-		peoplearray[count].final_tenant_cost = 0.0;
-
-	}
-
 }
 
 

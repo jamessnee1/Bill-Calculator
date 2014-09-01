@@ -3,7 +3,7 @@
 //  Bill Calculator
 //
 //  Created by James Snee on 1/09/2014.
-//
+//  Copyright (c) 2014 James Snee. All rights reserved.
 //
 
 #include <stdio.h>
@@ -12,7 +12,8 @@
 #include "bill.h"
 
 /*Function to take in a string of specific length*/
-char * stringinput(char * prompt, char * storage, int size){
+char * stringinput(char * prompt, char * storage, int size)
+{
     
     BOOLEAN finished = FALSE;
     
@@ -46,7 +47,8 @@ char * stringinput(char * prompt, char * storage, int size){
 }
 
 /*Function to take in an input of size 2 and convert to int*/
-int intinput(char * prompt, char * storage, int size){
+int intinput(char * prompt, char * storage, int size)
+{
     
     int result;
     BOOLEAN finished = FALSE;
@@ -88,7 +90,8 @@ int intinput(char * prompt, char * storage, int size){
 
 
 /*Function to take in an input of size 2 and convert to double*/
-double doubleinput(char * prompt, char * storage, int size){
+double doubleinput(char * prompt, char * storage, int size)
+{
     
     double result;
     BOOLEAN finished = FALSE;
@@ -128,12 +131,25 @@ double doubleinput(char * prompt, char * storage, int size){
     
 }
 
-
-
-
+/*read rest of line function flushes the buffer*/
 void read_rest_of_line(void) {
     int ch;
     while(ch=getc(stdin), ch!=EOF && ch!='\n')
         ;
     clearerr(stdin);
 }
+
+/*Initialise tenant array*/
+void initTenant(Tenant * peoplearray)
+{
+	int count;
+    
+	for (count = 0; count < NUMBER_OF_TENANTS; count++){
+		strcpy(peoplearray[count].tenant_name, "NULL");
+		peoplearray[count].num_of_days = 0;
+		peoplearray[count].final_tenant_cost = 0.0;
+        
+	}
+    
+}
+

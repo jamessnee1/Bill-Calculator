@@ -30,7 +30,7 @@ struct tenant {
 typedef struct tenant Tenant;
 
 
-/*boolean type*/
+/*boolean type used in input functions*/
 typedef enum truefalse
 {
     FALSE, TRUE

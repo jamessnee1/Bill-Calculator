@@ -37,10 +37,10 @@ int main(void)
     double cost_of_bill_per_day;
     double cost_per_person;
 
-    
+    /*create array of size 10 for max number of tenants, may change memory allocation later*/
     Tenant peoplearray[NUMBER_OF_TENANTS];
     
-    /*initialise our memory*/
+    /*initialise memory*/
     initTenant(peoplearray);
     
     printf("\tShare House Bill Calculator\t\t\n");
@@ -53,7 +53,7 @@ int main(void)
     printf("billing cycle. If at any time you would like to quit, simply\n");
     printf("press enter, although nothing will be saved.\n\n");
 
-    
+    /*If nothing entered, quit program as per above*/
     if(stringinput(prompt1, bill_name, BILL_NAME_LEN) == FALSE){
         printf("Error: Nothing entered! Exiting....\n");
         return EXIT_FAILURE;
@@ -102,7 +102,7 @@ int main(void)
         
         /*copy temp string to array*/
        	strcpy(peoplearray[i].tenant_name, temp_tenant_name);
-       	 /*loop to print all names*/
+        
        	printf("Tenant number %i is %s.\n", i, peoplearray[i].tenant_name);
         
         tenant_num_of_days = intinput(prompt6, temp_int_inputs, INT_INPUT_LEN + EXTRA_SPACES);

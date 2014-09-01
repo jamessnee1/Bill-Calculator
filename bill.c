@@ -38,8 +38,6 @@ int main(){
     
     /*initialise our memory*/
     initTenant(peoplearray);
-
-
     
     printf("\tShare House Bill Calculator\t\t\n");
     printf("\t\tBy James Snee\t\t\n");

@@ -7,6 +7,7 @@
 #define INT_INPUT_LEN 3
 #define DOUBLE_INPUT_LEN 7
 #define EXTRA_SPACES 2
+#define SCREEN_HEIGHT 5
 
 struct tenant {
 

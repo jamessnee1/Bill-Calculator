@@ -4,8 +4,8 @@
 #define NUMBER_OF_TENANTS 10
 #define BILL_NAME_LEN 20
 #define TENANT_NAME_LEN 20
-#define INT_INPUT_LEN 2
-#define DOUBLE_INPUT_LEN 6
+#define INT_INPUT_LEN 3
+#define DOUBLE_INPUT_LEN 7
 #define EXTRA_SPACES 2
 
 struct tenant {

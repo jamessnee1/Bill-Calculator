@@ -109,6 +109,11 @@ int main(){
             printf("Error: Nothing entered! Exiting....\n");
             return EXIT_FAILURE;
         }
+        else if (tenant_num_of_days > bill_num_of_days){
+            printf("Error: Tenant's number of days cannot exceed bill's number of days! Exiting...\n");
+            return EXIT_FAILURE;
+        
+        }
         
         /*put number of days into array*/
         peoplearray[i].num_of_days = tenant_num_of_days;

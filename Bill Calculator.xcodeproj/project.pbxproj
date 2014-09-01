@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		5904BF4819B4AAE500EA6BB0 /* util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
 		595616F319B45DB000837716 /* bill.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bill.c; sourceTree = "<group>"; };
 		595616F419B45DB000837716 /* bill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bill.h; sourceTree = "<group>"; };
 		595616F519B45DF600837716 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -16,6 +17,7 @@
 		595616EC19B45D3400837716 = {
 			isa = PBXGroup;
 			children = (
+				5904BF4819B4AAE500EA6BB0 /* util.c */,
 				595616F319B45DB000837716 /* bill.c */,
 				595616F519B45DF600837716 /* Makefile */,
 				595616F419B45DB000837716 /* bill.h */,

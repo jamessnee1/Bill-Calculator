@@ -50,9 +50,12 @@ int main(void)
 
     printf("INFORMATION: This program will work out the total cost of\n");
     printf("a bill, for each person living in the house, according to\n");
-    printf("how many days they were living here at the time of the\n");
-    printf("billing cycle. If at any time you would like to quit, simply\n");
-    printf("press enter, although nothing will be saved.\n\n");
+    printf("how many days they were living there at the time of the\n");
+    printf("billing cycle. If not one person has been at the residence\n");
+    printf("for the entire bill, the remainder will be split evenly\n");
+    printf("among all tenants.\n");
+    printf("If at any time you would like to quit, simply press enter,\n");
+    printf("although nothing will be saved.\n\n");
 
     /*If nothing entered, quit program as per above*/
     if(stringinput(prompt1, bill_name, BILL_NAME_LEN) == FALSE){

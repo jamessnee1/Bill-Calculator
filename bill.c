@@ -26,6 +26,7 @@ int main(void)
     /*temp variables*/
     int i;
     int j;
+    int at_least_one_tenant_wholebill = 0;
     char bill_name[BILL_NAME_LEN];
     char temp_tenant_name[TENANT_NAME_LEN + EXTRA_SPACES];
     char temp_int_inputs[INT_INPUT_LEN + EXTRA_SPACES];
@@ -125,6 +126,7 @@ int main(void)
         /*if tenant has been here for whole bill, set boolean to true*/
         if (peoplearray[i].num_of_days == bill_num_of_days){
             peoplearray[i].wholebill = 1;
+            at_least_one_tenant_wholebill = 1;
             printf("%s has been here for the whole bill.\n", peoplearray[i].tenant_name);
             divisor++;
         }else {
@@ -143,14 +145,30 @@ int main(void)
     if (total_calculated_cost != total_cost_of_bill){
         
         double remainder = total_cost_of_bill - total_calculated_cost;
+        printf("There was a discrepancy. Remainder is %g\n", remainder);
         
-        for(int count = 1; count <= num_of_tenants; count++){
-            
-            if (peoplearray[count].wholebill == 1){
-                peoplearray[count].final_tenant_cost += (remainder / divisor);
+        /*if there is at least one tenant who has been there for the whole bill, execute this*/
+        if (at_least_one_tenant_wholebill == 1){
+    
+            for(int count = 1; count <= num_of_tenants; count++){
+                
+                if (peoplearray[count].wholebill == 1){
+                    peoplearray[count].final_tenant_cost += (remainder / divisor);
+                }
             }
         
         }
+        else{
+            /*this means all the tenants havent been there the entire time,
+            distribute the remainder among everyone*/
+            for (int count2 = 1; count2 <= num_of_tenants; count2++){
+            
+                peoplearray[count2].final_tenant_cost += (remainder / num_of_tenants);
+            
+            }
+        
+        }
+        
         
     }
     

@@ -10,29 +10,29 @@
 	<string>Bill Calculator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7D2B9D2A-544D-4265-81C4-E230675C5F64</key>
+		<key>6AE0670D1909ABB28120BA2A7DBA82B5C4F5C2A6</key>
 		<string>https://github.com/jamessnee1/Bill-Calculator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Bill Calculator.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7D2B9D2A-544D-4265-81C4-E230675C5F64</key>
+		<key>6AE0670D1909ABB28120BA2A7DBA82B5C4F5C2A6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jamessnee1/Bill-Calculator.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7D2B9D2A-544D-4265-81C4-E230675C5F64</string>
+	<string>6AE0670D1909ABB28120BA2A7DBA82B5C4F5C2A6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7D2B9D2A-544D-4265-81C4-E230675C5F64</string>
+			<string>6AE0670D1909ABB28120BA2A7DBA82B5C4F5C2A6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BillCalc</string>
 		</dict>

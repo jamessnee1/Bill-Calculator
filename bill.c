@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "bill.h"
+#define COPYRIGHT 0xC9
 
 
 
@@ -37,6 +38,7 @@ int main(void)
     double total_cost_of_bill;
     double cost_of_bill_per_day;
     double cost_per_person;
+    
 
     /*create array of size 10 for max number of tenants, may change memory allocation later*/
     Tenant peoplearray[NUMBER_OF_TENANTS];
@@ -44,8 +46,8 @@ int main(void)
     /*initialise memory*/
     initTenant(peoplearray);
     
-    printf("\tShare House Bill Calculator\t\t\n");
-    printf("\t\tBy James Snee\t\t\n");
+    printf("\t    Share House Bill Calculator\t\t\n");
+    printf("\t      By James Snee, (c) 2014.\t\t\n");
     printf("-------------------------------------------------------\n\n");
 
     printf("INFORMATION: This program will work out the total cost of\n");
@@ -148,7 +150,7 @@ int main(void)
     if (total_calculated_cost != total_cost_of_bill){
         
         double remainder = total_cost_of_bill - total_calculated_cost;
-        printf("There was a discrepancy. Remainder is %g\n", remainder);
+        printf("There was a discrepancy. Remainder is $%g.\n", remainder);
         
         /*if there is at least one tenant who has been there for the whole bill, execute this*/
         if (at_least_one_tenant_wholebill == 1){
@@ -162,7 +164,7 @@ int main(void)
         
         }
         else{
-            /*this means all the tenants havent been there the entire time,
+            /*this means all the tenants haven't been there the entire time,
             distribute the remainder among everyone*/
             for (int count2 = 1; count2 <= num_of_tenants; count2++){
             
